@@ -1,0 +1,682 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*=================================
+  main styling starts here
+=================================*/
+/*=================================
+  banner section styling starts here
+=================================*/
+.banner-section {
+  padding: 186px 0 86px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#50426c),
+    to(#6e396f)
+  );
+
+}
+
+.banner-container {
+  display: flex;
+}
+
+.banner-heading {
+  margin-right: 5%;
+  color: #ebebeb;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.uppercase { text-transform: uppercase; }
+
+.banner-content {
+  padding: 0 4%;
+  border-left: 1px solid #9d91ac;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-info {
+  color: #9d91ac;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.started-btn > a {
+  padding: 12px 8%;
+  margin-top: 26px;
+  background-color: #43ae80;
+  color: #ebebeb;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 24px;
+  text-transform: uppercase;
+}
+.started-btn > a:hover {
+  background-color: #808080;
+    color: #fff;
+}
+/*=================================
+  banner section styling ends here
+=================================*/
+
+/*=================================
+  magna section styling starts here
+=================================*/
+.magna-section {
+  padding: 70px 0 64px;
+  background-color: #ebebeb;
+}
+
+.magna-container { display: flex; }
+
+.magna-content {
+  width: 50%;
+  margin-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.magna-heading {
+  color: #5e5e5e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.magna-info {
+  margin-top: 38px;
+  color: #5e5e5e;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.learn-btn > a {
+    display: flex;
+    justify-content: center;
+    padding: 12px 8%;
+    border: 1px solid #b1acb6;
+    margin-top: 34px;
+    border-radius: 24px;
+    color: #5e5e5e;
+    font-size: 10px;
+    width: 130px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.learn-btn > a:hover {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+.magna-list {
+  width: 50%;
+  padding: 0 4%;
+  border-left: 1px solid #9d91ac;
+  display: flex;
+  flex-direction: column;
+}
+.magna-list li::before {
+  color: #43ae80;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.magna-item {
+  margin-bottom: 34px;
+  color: #5e5e5e;
+  font-size: 12px;
+}
+.magna-item:last-child {
+  margin: 0;
+}
+.magna-item::before {
+  content: "\f00c";
+  padding-right: 2.25%;
+  font-size: 14px;
+}
+
+/*=================================
+  magna section styling ends here
+=================================*/
+
+/*=================================
+  gallery section styling starts here
+=================================*/
+.gallery-section {
+  padding: 64px 0;
+  background-color: #e6e6e6;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-list-content {
+
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.gallery-list-content:last-child {
+  margin: 0;
+}
+
+.gallery-img-container > img {
+  width: 100%;
+}
+
+.gallery-content {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #ebebeb;
+  box-shadow: 0 2px #cacaca;
+}
+
+.gallery-heading {
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gallery-info {
+  color: #5e5e5e;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.details-btn > a {
+  padding: 12px 8%;
+  border: 1px solid #b1acb6;
+  border-radius: 24px;
+  color: #5e5e5e;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ipsum-btn {
+  text-align: center;
+}
+
+.ipsum-btn > a {
+  padding: 12px 4%;
+  border: 1px solid #b1acb6;
+  border-radius: 24px;
+  margin-top: 40px;
+  color: #5e5e5e;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.details-btn > a:hover,
+.ipsum-btn > a:hover {
+    background-color: #808080;
+  color: #ffffff;
+}
+/*=================================
+  gallery section styling ends here
+=================================*/
+
+/*=================================
+  contact section styling starts here
+=================================*/
+.contact-section {
+  padding: 64px 0;
+  background-color: #ebebeb;
+}
+
+.contact-container {
+
+  display: flex;
+}
+
+.contact-form {
+  width: 50%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-info {
+  margin-top: 38px;
+  color: #5e5e5e;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.contact-form > form {
+  margin-top: 30px;
+}
+
+.input-fullname,
+.input-email {
+  width: 44%;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.input-fullname {
+  margin-right: 10%;
+}
+
+.input-fullname > input,
+.input-email > input {
+  width: 100%;
+  padding: 10px 5%;
+  border: 1px solid #cacaca;
+}
+
+.input-textarea > textarea {
+  width: 99%;
+  padding: 10px 2.5%;
+  border: 1px solid #cacaca;
+}
+
+.submit-btn > a {
+  padding: 12px 10%;
+  color: #5e5e5e;
+  font-size: 10px;
+  font-weight: 600;
+  border: 1px solid #cacaca;
+  border-radius: 24px;
+  margin-top: 26px;
+  text-transform: uppercase;
+}
+.submit-btn > a:hover {
+  border-color: #2b2b2b;
+  color: #2b2b2b;
+}
+
+.social-links {
+  width: 50%;
+  padding: 0 4%;
+  border-left: 1px solid #9d91ac;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links > li {
+  margin-bottom: 24px;
+}
+.social-links > li:last-child {
+  margin: 0; 
+}
+
+.social-links a{
+  width: 60%;   
+  color: #5e5e5e;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.social-links a::before {
+  color: #43ae80;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.twitter::before {
+  content: "\f099";
+  padding-right: 5%;
+  font-size: 14px;
+}
+
+.facebook::before {
+  content: "\f39e";
+  padding-right: 5%;
+  font-size: 14px;
+}
+
+.instagram::before {
+  content: "\f16d";
+  padding-right: 5%;
+  font-size: 14px;
+}
+
+.email::before {
+  content: "\f0e0";
+  padding-right: 5%;
+  font-size: 14px;
+}
+
+.home::before {
+  content: "\e3af";
+  padding-right: 5%;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  color: #2b2b2b;
+}
+
+/*=================================
+  contact section styling ends here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+.footer-section {
+  padding: 50px 0;
+  background-color: #e6e6e6;
+}
+
+.copright {
+  color: #bebebe;
+  font-size: 12px;
+  text-align: center;
+}
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-content {
+    padding: 20px 0;
+    border: unset;
+    border-top: 1px solid #9d91ac;
+    margin-top: 40px;
+  }
+
+  .magna-container {
+    flex-direction: column;
+  }
+
+  .magna-content {
+    width: 100%;
+  }
+
+  .magna-list {
+    width: 100%;
+    padding: 20px 0;
+    border: unset;
+    border-top: 1px solid #9d91ac;
+    margin-top: 40px;
+  }
+
+  .gallery-list-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .gallery-heading,
+  .gallery-info,
+  .details-btn {
+    margin: 10px 0;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .social-links {
+    width: 100%;
+    padding: 40px 0;
+    border: unset;
+    border-top: 1px solid #9d91ac;
+    margin-top: 40px;
+  }
+  .social-links a {
+    width: 100%;
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .banner-section {
+    padding: 90px 0;
+  }
+}
+
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  .banner-section {
+    padding: 70px 0;
+  }
+
+  .input-fullname,
+  .input-email {
+    width: 100%;
+  }
+  .textarea{
+    width: 100%;
+    padding: 10px 5.5%;
+  }
+}
