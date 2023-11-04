@@ -261,10 +261,7 @@ li {
   font-weight: 600;
   border-radius: 24px;
   text-transform: uppercase;
-}
-.started-btn > a:hover {
-  background-color: #808080;
-    color: #fff;
+  transition: all .3s ease-in-out;
 }
 /*=================================
   banner section styling ends here
@@ -312,11 +309,8 @@ li {
     width: 130px;
     font-weight: 600;
     text-transform: uppercase;
-}
-.learn-btn > a:hover {
-  background-color: #808080;
-  color: #ffffff;
-}
+    transition: all .3s ease-in-out;
+} 
 
 .magna-list {
   width: 50%;
@@ -406,6 +400,7 @@ li {
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all .3s ease-in-out;
 }
 
 .ipsum-btn {
@@ -423,11 +418,6 @@ li {
   text-transform: uppercase;
 }
 
-.details-btn > a:hover,
-.ipsum-btn > a:hover {
-    background-color: #808080;
-  color: #ffffff;
-}
 /*=================================
   gallery section styling ends here
 =================================*/
@@ -440,10 +430,7 @@ li {
   background-color: #ebebeb;
 }
 
-.contact-container {
-
-  display: flex;
-}
+.contact-container { display: flex; }
 
 .contact-form {
   width: 50%;
@@ -465,8 +452,13 @@ li {
   line-height: 16px;
 }
 
-.contact-form > form {
-  margin-top: 30px;
+.contact-form > form { margin-top: 30px; }
+
+.submit {
+  padding: 15px;
+  border: 1px solid #808080;
+  margin-top: 12px;
+  transition: all .3s ease-in-out;
 }
 
 .input-fullname,
@@ -502,10 +494,7 @@ li {
   border-radius: 24px;
   margin-top: 26px;
   text-transform: uppercase;
-}
-.submit-btn > a:hover {
-  border-color: #2b2b2b;
-  color: #2b2b2b;
+  transition: all .3s ease-in-out;
 }
 
 .social-links {
@@ -568,10 +557,6 @@ li {
   font-size: 14px;
 }
 
-.social-links a:hover {
-  color: #2b2b2b;
-}
-
 /*=================================
   contact section styling ends here
 =================================*/
@@ -598,6 +583,29 @@ li {
 =================================*/
 
 /*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (min-width: 995px) {
+  .started-btn > a:hover {
+    background-color: #fff;
+    color: #43ae80;
+  }
+
+  .learn-btn > a:hover,
+  .details-btn > a:hover,
+  .ipsum-btn > a:hover,
+  .submit:hover {
+    background-color: #808080;
+    color: #fff;
+  }
+
+  .social-links a:hover { color: #2b2b2b; }
+
+  .submit-btn > a:hover {
+    border-color: #2b2b2b;
+    color: #2b2b2b;
+  }
+}
+
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .banner-container {
